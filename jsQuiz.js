@@ -15,8 +15,13 @@ function inputValue() {
   height: treeHeight,
   character: treeChar
 };
+if (treeInput.height === "" || treeInput.character === ""){
+  alert("Enter Value for Height and Character");
+} else {
 tree(treeInput);
+};
 }
+
 
 
 function tree(treeInput) {
